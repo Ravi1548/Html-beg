@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<style>
+    #d1{
+        background-color: rgb(214, 212, 212);
+    }
+   
+    #d2{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #btn{
+       background-color: green;
+       border: none;
+    }
+    input{
+        margin-bottom: 1rem;
+        width: 400px;
+    }
+</style>
+<body><div id="d2">
+
+
+    <div id="d1">
+        First Name<br>
+        <input type="text" name="fname" placeholder="Your name.."><br>
+        Last Name<br>
+        <input type="text" name="lname" placeholder="Your last name.."><br>
+        Country<br>
+        <select name="counry">
+            <option disabled selected>select from here</option>
+            <option>Australia</option>
+            <option>India</option>
+            <option>Srilanka</option>
+            <option>China</option>
+            <option>USA</option>
+        </select><br>
+
+        Subject<br>
+        <textarea name="Subject" rows="5" cols="50" placeholder="Write something.."></textarea><br>
+
+        <button id="btn">Submit</button>
+    </div>
+    </div>
+</body>
+</html>

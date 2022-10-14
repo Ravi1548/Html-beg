@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Reservation Form</title>
+</head>
+<body align="center">
+    <h1><b>Travel Reservation Form</b></h1>
+    <label>Full name<sup>*</sup>:</label><br>
+    <input type="text" placeholder="FirstName LastName" required><br>
+    <label>Email address<sup>*</sup>:</label><br>
+    <input type="text" placeholder="EMAIL_ADDRESS" required><br>
+    Select Tour Package<sup>*</sup>:<br>
+    <select name="Package">
+        <option disabled selected>Select From here</option>
+        <option>Goa</option>
+        <option>Manali</option>
+        <option>Ranchi</option>
+        <option>Shimla</option>
+        <option>Ladakh</option>
+        <option>Munnar</option>
+    </select><br>
+    Arrival date<sup>*</sup>:<br>
+    <input type="date" required><br>
+    Number of persons<sup>*</sup>:<br>
+    <input type="text" placeholder="UNKNOWN_TYPE" required><br>
+    What would you want to avail?<sup>*</sup>:<br>
+    <input type="checkbox" name="check">Boarding</input><br>
+    <input type="checkbox" name="check">Fooding</input><br>
+    <input type="checkbox" name="check">Sight seeing</input><br>
+    Discount Coupon code <sup>*</sup>:<br>
+    <input type="text" required placeholder="UNKNOWN_TYPE"><br>
+    Terms and conditions<sup>*</sup>:<br>
+    <input type="radio" name="terms" value="agree">I agree</input>
+    <input type="radio" name="terms" value="disagree">I disagree</input><br>
+    <button type="submit" id="btn">complete reservation</button>
+</body>
+<script>
+const btnn = document.querySelector('#btn');
+
+btnn.addEventListener("click",function(){
+    alert("Thanks for Registration")
+})
+
+</script>
+</html>
